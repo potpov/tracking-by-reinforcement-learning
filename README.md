@@ -18,7 +18,7 @@ finally the Q-learning formula is used to update the network.
 
 # performances
 
-accuracy on this model is around 60% due to the lack of time the training set has kinda few entries and 
+accuracy on this model is around 63% due to the lack of time the training set has kinda few entries and 
 the features could be extracted in a better way. addictonal improvements to boorst performances might be the
 following:
 - crop each bounding box during detection and save it as a thumbnail
@@ -28,12 +28,16 @@ following:
 
 _ it's IMPORTANT to have a belanced dataset in order to make this model works! this can be achieved by calling the following istruction on your pandas dataframe before loading it_
 
-> g = df.groupby('gran truth') 
-> df = g.apply(lambda x: x.sample(g.size().min()).reset_index(drop=True))
+```python
+g = df.groupby('gran truth') 
+df = g.apply(lambda x: x.sample(g.size().min()).reset_index(drop=True))
+```
 
 check out if your dataset is balanced by using:
 
-> print(df['gran truth'].value_counts())
+```python
+print(df['gran truth'].value_counts())
+```
 
 
 # disclaim

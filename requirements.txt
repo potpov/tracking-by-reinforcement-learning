@@ -1,0 +1,7 @@
+opencv-contrib-python
+opencv-python
+torch
+torchvision
+sklearn
+pandas
+numpy
