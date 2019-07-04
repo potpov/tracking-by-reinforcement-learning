@@ -2,7 +2,7 @@ tracking by reinforcement learning
 
 # main idea
 
-the main idea behind this project is to exploit detection to create the traininset for our network.
+the main idea behind this project is to exploit detection to create the training-set for our network.
 
 first part is linked to dataloader and feature extractor.
 for each frame of my training video i used RES-net to extract the keypoints of a single person; starting
@@ -50,11 +50,11 @@ i also uploaded an alternative version of this software which use just the nn wi
 # how to install
  
 just install the dipendences by running:
-> pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 after you took your own videos with a fixed camera, set up your video path in conf.py and run
-> python dataloader.py 
+```python dataloader.py``` 
 to extract your feature and save them as .csv
 to train the network run
-> python reinforcement.py 
+```python reinforcement.py``` 
 i left a weight file and a dataset to have an example of how it works.
